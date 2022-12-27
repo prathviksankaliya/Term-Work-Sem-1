@@ -6,7 +6,6 @@ int reverse()
     scanf("%c", &str);
     if(str != '\n')
     {
-        
         reverse();
         printf("%c", str);
     }

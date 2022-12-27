@@ -43,7 +43,6 @@ int fun(char str1[], char str2[], int str1len, int str2len)
 }
 int main()
 {
-   
     char str1[100];
     char str2[100];
     printf("Enter the First String : ");

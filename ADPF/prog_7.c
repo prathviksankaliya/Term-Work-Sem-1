@@ -3,32 +3,30 @@ int main()
 {
     int i, j, n;
     scanf("%d", &n);
-    // upper half of the pattern
     for(i = 0; i < n; i++) 
     {
         for(j = 0; j < (2 * n); j++)
         { 
-            if(i + j <= n - 1)  // upper left triangle
+            if(i + j <= n - 1) 
                 printf("*");
             else
                 printf(" ");
-            if((i + n) <= j)  // upper right triangle
+            if((i + n) <= j) 
                 printf("*");
             else
                 printf(" ");
         }
         printf("\n");
     }
-    // bottom half of the pattern
     for(i = 0; i < n; i++)
     {
         for(j = 0; j < (2 * n); j++)
         {
-            if(i >= j)  //bottom left triangle
+            if(i >= j) 
                 printf("*");
             else
                 printf(" ");
-            if(i >= (2 * n - 1) - j)  // bottom right triangle
+            if(i >= (2 * n - 1) - j)
                 printf("*");
             else
                 printf(" ");
